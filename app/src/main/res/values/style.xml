@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LightTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">.25</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OrangeTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:background">@drawable/orange_rounded_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DisplayTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/alpha_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DisplayContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.32</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:background">@drawable/display_bg</item>
+    </style>
+
+    <style name="LinearLayoutContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.28</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <style name="ParentLayoutContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/blue_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:weightSum">2</item>
+    </style>
+</resources>

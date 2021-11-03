@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ParentLayoutContainer">
+
+    <!--    LinearLayout to show operator(TextView) and result(TextView) divided with weights
+    width, height and other properties are set with styles-->
+    <LinearLayout
+        style="@style/DisplayContainer"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/operatorTV"
+            style="@style/DisplayTextView"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/displayTV"
+            style="@style/DisplayTextView"
+            android:layout_weight=".8"
+            android:hint="@string/_8_digit_calculator"
+            android:maxLength="8" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show mod, square, squareroot and inverse-->
+    <LinearLayout
+        style="@style/LinearLayoutContainer"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/percentageTV"
+            style="@style/LightTextView"
+            android:text="@string/percentage" />
+
+        <TextView
+            android:id="@+id/squareTV"
+            style="@style/LightTextView"
+            android:text="@string/square" />
+
+        <TextView
+            android:id="@+id/square_rootTV"
+            style="@style/LightTextView"
+            android:text="@string/square_root_symbol" />
+
+        <TextView
+            android:id="@+id/inverseTV"
+            style="@style/LightTextView"
+            android:text="@string/inverse" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show 1,2,3,divide operator-->
+    <LinearLayout style="@style/LinearLayoutContainer">
+
+        <TextView
+            android:id="@+id/oneTV"
+            style="@style/LightTextView"
+            android:text="@string/one" />
+
+        <TextView
+            android:id="@+id/twoTV"
+            style="@style/LightTextView"
+            android:text="@string/two" />
+
+        <TextView
+            android:id="@+id/threeTV"
+            style="@style/LightTextView"
+            android:text="@string/three" />
+
+        <TextView
+            android:id="@+id/divideTV"
+            style="@style/LightTextView"
+            android:text="@string/divide_symbol" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show 4,5,6,subtract operator-->
+    <LinearLayout style="@style/LinearLayoutContainer">
+
+        <TextView
+            android:id="@+id/fourTV"
+            style="@style/LightTextView"
+            android:text="@string/four" />
+
+        <TextView
+            android:id="@+id/fiveTV"
+            style="@style/LightTextView"
+            android:text="@string/five" />
+
+        <TextView
+            android:id="@+id/sixTV"
+            style="@style/LightTextView"
+            android:text="@string/six" />
+
+        <TextView
+            android:id="@+id/subtractTV"
+            style="@style/LightTextView"
+            android:text="@string/minus_symbol" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show 7,8,9,multiply operator-->
+    <LinearLayout style="@style/LinearLayoutContainer">
+
+        <TextView
+            android:id="@+id/sevenTV"
+            style="@style/LightTextView"
+            android:text="@string/seven" />
+
+        <TextView
+            android:id="@+id/eightTV"
+            style="@style/LightTextView"
+            android:text="@string/eight" />
+
+        <TextView
+            android:id="@+id/nineTV"
+            style="@style/LightTextView"
+            android:text="@string/nine" />
+
+        <TextView
+            android:id="@+id/multiplyTV"
+            style="@style/LightTextView"
+            android:text="@string/multiply_symbol" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show decimal,0,add operator-->
+    <LinearLayout style="@style/LinearLayoutContainer">
+
+        <TextView
+            android:id="@+id/decimalTV"
+            style="@style/LightTextView"
+            android:text="@string/dot" />
+
+        <TextView
+            android:id="@+id/zeroTV"
+            style="@style/LightTextView"
+            android:layout_weight=".5"
+            android:text="@string/zero" />
+
+        <TextView
+            android:id="@+id/addTV"
+            style="@style/LightTextView"
+            android:text="@string/add_symbol" />
+
+    </LinearLayout>
+
+    <!--    Linear Layout to show clear and equalTo -->
+    <LinearLayout style="@style/LinearLayoutContainer">
+
+        <TextView
+            android:id="@+id/clearTV"
+            style="@style/OrangeTextView"
+            android:text="@string/clear" />
+
+        <TextView
+            android:id="@+id/equalsTV"
+            style="@style/OrangeTextView"
+            android:text="@string/equals" />
+
+    </LinearLayout>
+
+</LinearLayout>
