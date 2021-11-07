@@ -8,7 +8,7 @@ Addition, Subtraction, Multiplication, Division, Mod, Square, Square Root, Inver
 
 ## Getting Started
 
-1. First, clone the repo: git clone 'https://github.com/ParwinderDeepKaur/MidTermExam.git'.
+1. First, clone the repo: git clone 'https://github.com/ParwinderDeepKaur/CalculatorApp.git'.
 2. Open Android Studio and select 'Open an existing Android Studio Project'.
 3. Navigate to checked out repository.
 4. Select the 'CalculatorApp' project from downloaded location.
