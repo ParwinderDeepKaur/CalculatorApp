@@ -8,14 +8,14 @@
         style="@style/DisplayContainer"
         android:weightSum="1">
 
-        <TextView
+         <TextView
             android:id="@+id/operatorTV"
             style="@style/DisplayTextView"
             android:layout_weight=".2"
             android:gravity="center"
             android:textSize="30sp" />
 
-        <TextView
+         <TextView
             android:id="@+id/displayTV"
             style="@style/DisplayTextView"
             android:layout_weight=".8"
@@ -29,22 +29,22 @@
         style="@style/LinearLayoutContainer"
         android:layout_marginTop="2dp">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/percentageTV"
             style="@style/LightTextView"
             android:text="@string/percentage" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/squareTV"
             style="@style/LightTextView"
             android:text="@string/square" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/square_rootTV"
             style="@style/LightTextView"
             android:text="@string/square_root_symbol" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/inverseTV"
             style="@style/LightTextView"
             android:text="@string/inverse" />
@@ -54,22 +54,22 @@
     <!--    Linear Layout to show 1,2,3,divide operator-->
     <LinearLayout style="@style/LinearLayoutContainer">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/oneTV"
             style="@style/LightTextView"
             android:text="@string/one" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/twoTV"
             style="@style/LightTextView"
             android:text="@string/two" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/threeTV"
             style="@style/LightTextView"
             android:text="@string/three" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/divideTV"
             style="@style/LightTextView"
             android:text="@string/divide_symbol" />
@@ -79,22 +79,22 @@
     <!--    Linear Layout to show 4,5,6,subtract operator-->
     <LinearLayout style="@style/LinearLayoutContainer">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/fourTV"
             style="@style/LightTextView"
             android:text="@string/four" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/fiveTV"
             style="@style/LightTextView"
             android:text="@string/five" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/sixTV"
             style="@style/LightTextView"
             android:text="@string/six" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/subtractTV"
             style="@style/LightTextView"
             android:text="@string/minus_symbol" />
@@ -104,22 +104,22 @@
     <!--    Linear Layout to show 7,8,9,multiply operator-->
     <LinearLayout style="@style/LinearLayoutContainer">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/sevenTV"
             style="@style/LightTextView"
             android:text="@string/seven" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eightTV"
             style="@style/LightTextView"
             android:text="@string/eight" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nineTV"
             style="@style/LightTextView"
             android:text="@string/nine" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/multiplyTV"
             style="@style/LightTextView"
             android:text="@string/multiply_symbol" />
@@ -129,18 +129,18 @@
     <!--    Linear Layout to show decimal,0,add operator-->
     <LinearLayout style="@style/LinearLayoutContainer">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/decimalTV"
             style="@style/LightTextView"
             android:text="@string/dot" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/zeroTV"
             style="@style/LightTextView"
             android:layout_weight=".5"
             android:text="@string/zero" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addTV"
             style="@style/LightTextView"
             android:text="@string/add_symbol" />
@@ -150,12 +150,12 @@
     <!--    Linear Layout to show clear and equalTo -->
     <LinearLayout style="@style/LinearLayoutContainer">
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/clearTV"
             style="@style/OrangeTextView"
             android:text="@string/clear" />
 
-        <TextView
+         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/equalsTV"
             style="@style/OrangeTextView"
             android:text="@string/equals" />

@@ -3,7 +3,9 @@ package com.parwinder.calculator_app;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,11 +26,12 @@ import java.text.DecimalFormat;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView oneTV, twoTV, threeTV, fourTV, fiveTV,
+    private Button oneTV, twoTV, threeTV, fourTV, fiveTV,
             sixTV, sevenTV, eightTV, nineTV, zeroTV, decimalTV,
             addTV, subtractTV, multipleTV, divideTV, clearTV,
             percentageTV, squareTV, squareRootTV, inverseTV,
-            equalsTV, displayTV, operatorTV;
+            equalsTV;
+    private TextView displayTV, operatorTV;
     private float operand1, result;
 
     @Override
@@ -195,12 +198,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * set the value as hint to displayTV
      * set text of operatorTV and displayTV as null*/
     private void showResult() {
-        if (!displayTV.getText().toString().isEmpty()) {
-            if (!operatorTV.getText().toString().isEmpty()) {
-                displayTV.setHint(getFormat(calculateExpression()));
-                displayTV.setText(null);
-                operatorTV.setText(null);
+        try {
+            if (!displayTV.getText().toString().isEmpty()) {
+                if (!operatorTV.getText().toString().isEmpty()) {
+                    displayTV.setHint(getFormat(calculateExpression()));
+                    displayTV.setText(null);
+                    operatorTV.setText(null);
+                }
             }
+        } catch (Exception e) {
+            Toast.makeText(this, getString(R.string.invalid_input), Toast.LENGTH_SHORT).show();
+            e.printStackTrace();
         }
     }
 

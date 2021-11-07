@@ -22,4 +22,5 @@
     <string name="square">x&#xB2;</string>
     <string name="square_root_symbol">2\u221ax</string>
     <string name="inverse">1/x</string>
+    <string name="invalid_input">Invalid Input!</string>
 </resources>
